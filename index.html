@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>json form</title>
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+<body>
+    <div class="form-style-10">
+    <h1>Sign Up Now!<span>Sign up and tell us what you think of the site!</span></h1>
+    <form id="myform">
+        <div class="section"><span>1</span>First Name & Address</div>
+        <div class="inner-wrap">
+            <label>Your Full Name <input type="text" name="field1" /></label>
+            <label>Address <textarea name="field2"></textarea></label>
+        </div>
+    
+        <div class="section"><span>2</span>Email & Phone</div>
+        <div class="inner-wrap">
+            <label>Email Address <input type="email" name="field3" /></label>
+            <label>Phone Number <input type="text" name="field4" /></label>
+        </div>
+    
+        <div class="section"><span>3</span>Passwords</div>
+            <div class="inner-wrap">
+            <label>Password <input type="password" name="field5" /></label>
+            <label>Confirm Password <input type="password" name="field6" /></label>
+        </div>
+         <div class="section">
+         <input type="checkbox" name="field7" Checked>You agree to our Terms and Policy</input>
+        </div> 
+    </form>
+    </div>
+    <script src="jquery-1.7.2.js"></script>
+    <script src="jsonify.js"></script>
+    <script>
+        $('#myform').dejsonify({
+            field1:"Rahul kumar singh",
+            field2:"NEW delhi",
+            field3:"xyz@gmai.com",
+            field4:"6767676766",
+            field5:"123456789",
+            field6:"123456789",
+        });
+    </script>
+ </body>
+</html>
